@@ -23,28 +23,6 @@ A Discord bot built with Node.js and discord.js. Handles moderation, plays YouTu
 **Utility**
 - `$help` — list all commands
 
-## Setup
-
-1. Clone this repo and install dependencies:
-   ```
-   npm install
-   ```
-2. Create a Discord application and bot user at the [Discord Developer Portal](https://discord.com/developers/applications). Under **Bot**, enable the **Message Content Intent** and **Server Members Intent**.
-3. Copy `.env.example` to `.env` and add your bot token:
-   ```
-   DISCORD_TOKEN=your-bot-token-here
-   ```
-4. Invite the bot to your server using the OAuth2 URL generator (scope: `bot`, with the permissions your use case needs — kick/ban/timeout/manage messages/connect+speak in voice).
-5. Start the bot:
-   ```
-   npm start
-   ```
-
-## Notes
-
-- Music playback uses `yt-dlp` under the hood, wrapped by `yt-dlp-exec`. Audio is streamed directly without saving files to disk.
-- `$archive` downloads are served from a small local HTTP server bound to `127.0.0.1`, so the download link only works from the same machine the bot is running on.
-- Only one instance of the bot should run at a time — running it twice (e.g. two terminals open) will cause every command to fire and reply more than once.
 
 ## Tech stack
 
