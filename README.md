@@ -48,7 +48,7 @@ The bot needs its own Discord application and a token to log in. This part is fr
 
 The bot reads its token from a `.env` file, which keeps it out of the actual code so you never accidentally share it.
 
-1. In the project folder, find the file called `.env.example` and make a copy of it named `.env`.
+1. In the project folder, find the file called `.env`.
 2. Open `.env` in any text editor and paste your token in, like this:
 
 ```
@@ -71,7 +71,6 @@ If it logs in successfully you'll see it come online in your Discord server, and
 
 - Music playback uses `yt-dlp` under the hood, wrapped by `yt-dlp-exec`. Audio is streamed directly without saving files to disk.
 - `$archive` downloads are served from a small local HTTP server bound to `127.0.0.1`, so the download link only works from the same machine the bot is running on.
-- Only one instance of the bot should run at a time, running it twice (for example two terminals open) will cause every command to fire and reply more than once.
 
 ## Tech stack
 
