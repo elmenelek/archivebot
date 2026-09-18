@@ -2,8 +2,6 @@
 
 A Discord bot built with Node.js and discord.js. Handles moderation, plays YouTube audio in voice channels, and can export a channel's entire message history into a single self-contained HTML file styled like Discord itself.
 
-![demo](demo.gif)
-
 ## Features
 
 **Moderation**
